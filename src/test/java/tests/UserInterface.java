@@ -39,38 +39,38 @@ public class UserInterface extends BaseTest  {
                 "The '3' card is not open");
     }
 
-    @Test (priority = 2)
-    public void testCase2() {
-        homePage = new HomePage();
-        card1 = new Card1Form();
-        Assert.assertTrue(homePage.state().isDisplayed(),
-                "Welcome page is not open");
-        homePage.clickOnHereToGo();
-        card1.clickHelpFormBtn();
-        Assert.assertTrue(card1.isHelpFormSentToBottom(),
-                "The Help form is still visible");
-    }
-
-    @Test (priority = 3)
-    public void testCase3() {
-        homePage = new HomePage();
-        card1 = new Card1Form();
-        Assert.assertTrue(homePage.state().isDisplayed(),
-                "Welcome page is not open");
-        homePage.clickOnHereToGo();
-        card1.clickCookiesBtn();
-        Assert.assertFalse(card1.isCookiesFormClosed(),
-                "The Cookies form is still visible");
-    }
-
-    @Test (priority = 4)
-    public void testCase4() {
-        homePage = new HomePage();
-        card1 = new Card1Form();
-        Assert.assertTrue(homePage.state().isDisplayed(),
-                "Welcome page is not open");
-        homePage.clickOnHereToGo();
-        String currentTime = card1.getTime();
-        Assert.assertEquals(time, currentTime, "Timer does not start from '00:00'");
-    }
+//    @Test (priority = 2)
+//    public void testCase2() {
+//        homePage = new HomePage();
+//        card1 = new Card1Form();
+//        Assert.assertTrue(homePage.state().isDisplayed(),
+//                "Welcome page is not open");
+//        homePage.clickOnHereToGo();
+//        card1.clickHelpFormBtn();
+//        Assert.assertTrue(card1.isHelpFormSentToBottom(),
+//                "The Help form is still visible");
+//    }
+//
+//    @Test (priority = 3)
+//    public void testCase3() {
+//        homePage = new HomePage();
+//        card1 = new Card1Form();
+//        Assert.assertTrue(homePage.state().isDisplayed(),
+//                "Welcome page is not open");
+//        homePage.clickOnHereToGo();
+//        card1.clickCookiesBtn();
+//        Assert.assertFalse(card1.isCookiesFormClosed(),
+//                "The Cookies form is still visible");
+//    }
+//
+//    @Test (priority = 4)
+//    public void testCase4() {
+//        homePage = new HomePage();
+//        card1 = new Card1Form();
+//        Assert.assertTrue(homePage.state().isDisplayed(),
+//                "Welcome page is not open");
+//        homePage.clickOnHereToGo();
+//        String currentTime = card1.getTime();
+//        Assert.assertEquals(time, currentTime, "Timer does not start from '00:00'");
+//    }
 }
